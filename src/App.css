@@ -1,0 +1,132 @@
+:root {
+  --body-bg: rgb(13, 27, 74);
+  --body-bg2: rgb(76, 26, 110);
+  --nav-bg: rgb(126, 126, 126);
+  --text-bg: rgb(213, 213, 213);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: system-ui;
+}
+
+.layout {
+  margin: 0;
+  font-size: 1.25rem;
+  background: linear-gradient(
+    to right,
+    var(--body-bg) 20%,
+    var(--body-bg2) 80%
+  );
+  color: var(--text-bg);
+  display: grid;
+  grid-template-columns: 20rem 1fr;
+  gap: 5rem;
+  min-height: 100svh;
+}
+
+.styled-navbar {
+  overflow: auto;
+  position: sticky;
+  top: 0;
+  max-height: 100svh;
+  background-color: var(--nav-bg);
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: grid;
+  gap: 3rem;
+  padding-block: 2rem;
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+
+.nav-list li {
+  margin-left: 2.5rem;
+}
+
+.navbar-item {
+  border-radius: 100vw 0 0 100vw;
+  display: block;
+  padding: 0.75rem 1.75rem;
+  color: var(--text-bg) !important;
+  text-decoration: none;
+}
+
+.navbar-item {
+  transform: translateY(10%);
+  transition: transform 0.3s ease-out;
+}
+
+.navbar-item.active {
+  transform: translateX(0);
+}
+
+.navbar-item.active {
+  background-color: var(--body-bg);
+  position: relative;
+}
+
+.navbar-item.active::before,
+.navbar-item.active::after {
+  --border-radius: 2rem;
+
+  content: '';
+  color: var(--body-bg);
+  position: absolute;
+  width: var(--border-radius);
+  height: var(--border-radius);
+  right: 0;
+  background-color: var(--nav-bg);
+}
+
+.navbar-item.active::before {
+  top: calc(var(--border-radius) * -1);
+  border-radius: 0 0 100vw 0;
+  box-shadow: 10px 15px 0 10px var(--body-bg);
+}
+
+.navbar-item.active::after {
+  bottom: calc(var(--border-radius) * -1);
+  border-radius: 0 100vw 0 0;
+  box-shadow: 10px -15px 0 10px var(--body-bg);
+}
+
+.logo {
+  display: flex;
+  color: #000;
+  gap: 30px;
+  align-items: center;
+  position: absolute;
+  bottom: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.school-logo {
+  left: 1rem;
+  width: 50px;
+  position: relative;
+  border-radius: 50%;
+}
+
+.content {
+  position: relative;
+  min-height: 100svh;
+}
+
+.home-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 1rem;
+}
