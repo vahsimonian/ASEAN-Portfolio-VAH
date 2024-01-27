@@ -1,6 +1,6 @@
 :root {
   --body-bg: rgb(13, 27, 74);
-  --body-bg2: rgb(76, 26, 110);
+  --body-bg2: rgb(79, 13, 122);
   --nav-bg: rgb(126, 126, 126);
   --text-bg: rgb(213, 213, 213);
 }
@@ -103,16 +103,19 @@ html {
 
 .logo {
   display: flex;
-  color: #000;
+  color: var(--body-bg);
   gap: 30px;
   align-items: center;
   position: absolute;
   bottom: 1.5rem;
   font-size: 1.2rem;
   font-weight: 500;
+  bottom: 15;
+  /* bottom: -15px; */
+  padding-inline: 5vw;
 }
 
-.school-logo {
+.my-image {
   left: 1rem;
   width: 50px;
   position: relative;

@@ -87,7 +87,7 @@ const StyledNavbar = () => {
         target="_blank"
       >
         <div className="logo">
-          <img src={myImage} alt="Asean-school-logo" className="school-logo" />
+          <img src={myImage} alt="Asean-school-logo" className="my-image" />
           <p>Vah Simonian</p>
         </div>
       </Link>
