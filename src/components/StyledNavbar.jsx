@@ -12,7 +12,7 @@ const StyledNavbar = () => {
             aria-current="page"
             to="/"
             style={({ isActive }) => ({
-              color: isActive ? 'rgb(13, 27, 74)' : '#fff',
+              color: isActive ? 'rgb(180, 180, 180)' : '#fff',
             })}
             className="navbar-item"
           >
@@ -24,7 +24,7 @@ const StyledNavbar = () => {
             aria-current="page"
             to="/about"
             style={({ isActive }) => ({
-              color: isActive ? 'rgb(13, 27, 74)' : '#fff',
+              color: isActive ? 'rgb(180, 180, 180)' : '#fff',
             })}
             className="navbar-item"
           >
@@ -36,7 +36,7 @@ const StyledNavbar = () => {
             aria-current="page"
             to="/my-works"
             style={({ isActive }) => ({
-              color: isActive ? 'rgb(13, 27, 74)' : '#fff',
+              color: isActive ? 'rgb(180, 180, 180)' : '#fff',
             })}
             className="navbar-item"
           >
@@ -48,7 +48,7 @@ const StyledNavbar = () => {
             aria-current="page"
             to="/teachingprogram"
             style={({ isActive }) => ({
-              color: isActive ? 'rgb(13, 27, 74)' : '#fff',
+              color: isActive ? 'rgb(180, 180, 180)' : '#fff',
             })}
             className="navbar-item"
           >
@@ -60,7 +60,7 @@ const StyledNavbar = () => {
             aria-current="page"
             to="/contacts"
             style={({ isActive }) => ({
-              color: isActive ? 'rgb(13, 27, 74)' : '#fff',
+              color: isActive ? 'rgb(180, 180, 180)' : '#fff',
             })}
             className="navbar-item"
           >
@@ -72,7 +72,7 @@ const StyledNavbar = () => {
             aria-current="page"
             to="/more"
             style={({ isActive }) => ({
-              color: isActive ? 'rgb(13, 27, 74)' : '#fff',
+              color: isActive ? 'rgb(180, 180, 180)' : '#fff',
             })}
             className="navbar-item"
           >
@@ -88,7 +88,7 @@ const StyledNavbar = () => {
       >
         <div className="logo">
           <img src={myImage} alt="Asean-school-logo" className="my-image" />
-          <p>Vah Simonian</p>
+          <p className="vah-simonian">Vah Simonian</p>
         </div>
       </Link>
     </nav>
