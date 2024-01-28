@@ -223,6 +223,7 @@ html {
   color: var(--text-bg);
   background-color: var(--body-bg2);
   border: 1px solid var(--text-bg);
+  transition: all 0.5s ease-out;
 }
 
 .download-btn:hover {

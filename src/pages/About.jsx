@@ -53,7 +53,7 @@ const About = () => {
             <img className="github-icon" src={githubIcon} alt="youtube" />
             <p>github</p>
             <button className="download-btn" onClick={handleDownload}>
-              Download pdf
+              Download pdf cv
             </button>
           </NavLink>
         </div>
