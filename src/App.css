@@ -139,7 +139,7 @@ html {
 
 .projects-container {
   display: grid;
-  grid-template-columns: 10rem 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
 
@@ -154,12 +154,53 @@ html {
 }
 
 .vah-logo {
+  border: 2.5px solid rgb(126, 126, 126);
+  border-radius: 5px;
   width: 200px;
   border-radius: 20vw;
 }
 
 .about-page {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  border: 1px solid magenta;
+  grid-template-columns: repeat(1, 1fr);
+  /* border: 1px solid magenta; */
+  gap: 2rem;
+}
+
+.video-youtube {
+  width: 150px;
+  margin-inline-start: -15px;
+  border: 2.5px solid rgb(126, 126, 126);
+  border-radius: 5px;
+}
+
+.img-greeting {
+  display: flex;
+  align-items: center;
+}
+.greeting {
+  margin-inline: 2rem;
+}
+
+.youtube-icon {
+  border: 2.5px solid rgb(126, 126, 126);
+  border-radius: 20px;
+  width: 5rem;
+  height: 4rem;
+}
+
+.youtube {
+  gap: 1rem;
+  display: flex;
+}
+
+.github-icon {
+  border: 2.5px solid rgb(126, 126, 126);
+  margin-top: 10px;
+  border-radius: 50%;
+  width: 5rem;
+}
+
+.home-icons {
+  text-align: center;
 }

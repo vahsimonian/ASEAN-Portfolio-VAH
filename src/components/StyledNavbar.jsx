@@ -1,7 +1,6 @@
 import '../App.css';
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import myImage from '../assets/vah.png';
 import githubIcon from '../assets/github.png';
 
 const StyledNavbar = () => {
