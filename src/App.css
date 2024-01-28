@@ -135,15 +135,15 @@ html {
 }
 
 .projects-page {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  flex-direction: 10rem 2fr;
   justify-content: space-evenly;
   min-height: 80svh;
 }
 
 .projects-container {
   display: grid;
-  grid-template-columns: 30% 2fr;
+  grid-template-columns: 10rem 1fr;
   gap: 1rem;
 }
 
