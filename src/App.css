@@ -154,7 +154,6 @@ html {
 }
 
 .vah-logo {
-  border: 2.5px solid rgb(126, 126, 126);
   border-radius: 5px;
   width: 200px;
   border-radius: 20vw;
@@ -163,14 +162,13 @@ html {
 .about-page {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  /* border: 1px solid magenta; */
   gap: 2rem;
 }
 
 .video-youtube {
   width: 150px;
+  height: 200px;
   margin-inline-start: -15px;
-  border: 2.5px solid rgb(126, 126, 126);
   border-radius: 5px;
 }
 
@@ -183,24 +181,49 @@ html {
 }
 
 .youtube-icon {
-  border: 2.5px solid rgb(126, 126, 126);
   border-radius: 20px;
   width: 5rem;
   height: 4rem;
 }
-
 .youtube {
-  gap: 1rem;
+  gap: 2rem;
   display: flex;
 }
 
 .github-icon {
-  border: 2.5px solid rgb(126, 126, 126);
-  margin-top: 10px;
+  /* border: 2.5px solid rgb(126, 126, 126); */
+  margin-top: 20px;
   border-radius: 50%;
   width: 5rem;
 }
 
 .home-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
+  align-items: center;
+}
+
+.download-btn {
+  padding: 5px 10px;
+  margin-top: 30px;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: var(--text-bg);
+  background-color: var(--body-bg2);
+  border: 1px solid var(--text-bg);
+}
+
+.download-btn:hover {
+  color: var(--body-bg2);
+  background-color: var(--text-bg);
+}
+
+.home-icons p {
+  margin-top: 5px;
+}
+
+.im-vah span {
+  color: white;
 }

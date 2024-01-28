@@ -4,11 +4,26 @@ import ReactPlayer from 'react-player';
 import youtubeIcon from '../assets/youtube-icon.png';
 import { NavLink } from 'react-router-dom';
 import githubIcon from '../assets/github.png';
+import cvPdf from '../assets/CV.pdf';
 
 const About = () => {
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = cvPdf;
+    link.download = 'downloaded.pdf'; // The default filename for the download
+    link.click();
+  };
+
   return (
     <div className="about-page">
-      <h1>Hi, friend</h1>
+      <div className="im-vah">
+        <h1>Hi, friend </h1>
+        <h1>
+          I'm <span>Vah</span>{' '}
+        </h1>
+        <p>React js web-developer</p>
+      </div>
+
       <div className="img-greeting">
         <img src={myImg} alt="logo" className="vah-logo" />
         <div className="greeting">
@@ -18,8 +33,9 @@ const About = () => {
       </div>
       <div className="youtube">
         <ReactPlayer
-          width={250}
-          className="video-youtube"
+          width={200}
+          height={300}
+          // className="video-youtube"
           url={'https://www.youtube.com/shorts/ojVgMk-2-TE'}
         />
         <div className="home-icons">
@@ -35,6 +51,9 @@ const About = () => {
             <p>subscribe</p>
             <img className="github-icon" src={githubIcon} alt="youtube" />
             <p>github</p>
+            <button className="download-btn" onClick={handleDownload}>
+              Download pdf
+            </button>
           </NavLink>
         </div>
       </div>
