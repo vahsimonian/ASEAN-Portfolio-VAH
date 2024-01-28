@@ -28,7 +28,8 @@ const About = () => {
         <img src={myImg} alt="logo" className="vah-logo" />
         <div className="greeting">
           <p>Thanks for coming to my page</p>
-          <p>Here you'll find all about me</p>
+          <br />
+          <p>Here you'll find a lot about me</p>
         </div>
       </div>
       <div className="youtube">

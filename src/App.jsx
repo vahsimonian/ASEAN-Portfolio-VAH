@@ -4,7 +4,7 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
-import MyWorks from './pages/MyWorks';
+// import MyWorks from './pages/MyWorks';
 import Projects from './pages/Projects';
 import Contacts from './pages/Contacts';
 import More from './pages/MoreInfo';
@@ -17,7 +17,7 @@ function App() {
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/my-works" element={<MyWorks />} />
+          {/* <Route path="/my-works" element={<MyWorks />} /> */}
           <Route path="/teachingprogram" element={<Projects />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/more" element={<More />} />

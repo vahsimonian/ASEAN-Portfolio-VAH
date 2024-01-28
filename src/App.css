@@ -62,8 +62,13 @@ html {
   transition: transform 0.3s ease-out;
 }
 
+.navbar-item:hover {
+  color: rgb(210, 207, 207) !important;
+}
+
 .navbar-item.active {
   transform: translateX(0);
+  color: var(--text-bg) !important;
 }
 
 .navbar-item.active {
@@ -135,6 +140,7 @@ html {
   flex-direction: 10rem 2fr;
   justify-content: space-evenly;
   min-height: 80svh;
+  align-items: center;
 }
 
 .projects-container {
@@ -157,6 +163,10 @@ html {
   border-radius: 5px;
   width: 200px;
   border-radius: 20vw;
+}
+
+.logo {
+  position: absolute;
 }
 
 .about-page {

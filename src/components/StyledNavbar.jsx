@@ -1,7 +1,7 @@
 import '../App.css';
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import githubIcon from '../assets/github.png';
+import vsLogo from '../assets/vs-logo.png';
 
 const StyledNavbar = () => {
   return (
@@ -31,7 +31,7 @@ const StyledNavbar = () => {
             About
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink
             aria-current="page"
             to="/my-works"
@@ -42,7 +42,7 @@ const StyledNavbar = () => {
           >
             My Works
           </NavLink>
-        </li>
+        </li> */}
         <li>
           <NavLink
             aria-current="page"
@@ -82,7 +82,7 @@ const StyledNavbar = () => {
       </ul>
       <div className="logo">
         <Link to={'https://github.com/vahsimonian'} target="_blank">
-          <img src={githubIcon} alt="Asean-school-logo" className="my-image" />
+          <img src={vsLogo} alt="Asean-school-logo" className="my-image" />
         </Link>
         <p className="vah-simonian">Vah Simonian</p>
       </div>
