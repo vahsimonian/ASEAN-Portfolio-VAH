@@ -133,3 +133,26 @@ html {
   font-size: 1.25rem;
   font-weight: 300;
 }
+
+.projects-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 80svh;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 30% 2fr;
+  gap: 1rem;
+}
+
+.projects-img {
+  border-radius: 7vw;
+  width: 10rem;
+  transition: all 0.5s ease-out;
+}
+
+.projects-img:hover {
+  scale: 1.05;
+}
