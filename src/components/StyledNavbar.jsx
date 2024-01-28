@@ -52,7 +52,7 @@ const StyledNavbar = () => {
             })}
             className="navbar-item"
           >
-            Curriculum
+            Projects
           </NavLink>
         </li>
         <li>
