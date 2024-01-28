@@ -101,12 +101,13 @@ html {
   color: var(--body-bg);
   gap: 30px;
   align-items: center;
-  position: absolute;
+  /* position: absolute; */
   bottom: 1.5rem;
   font-size: 1.2rem;
   font-weight: 500;
   bottom: 15;
   left: 5%;
+  text-decoration: none !important;
 }
 
 .my-image {
@@ -114,11 +115,6 @@ html {
   width: 50px;
   position: relative;
   border-radius: 50%;
-}
-
-.content {
-  position: relative;
-  min-height: 100svh;
 }
 
 .home-page {
@@ -155,4 +151,15 @@ html {
 
 .projects-img:hover {
   scale: 1.05;
+}
+
+.vah-logo {
+  width: 200px;
+  border-radius: 20vw;
+}
+
+.about-page {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: 1px solid magenta;
 }

@@ -2,6 +2,7 @@ import '../App.css';
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import myImage from '../assets/vah.png';
+import githubIcon from '../assets/github.png';
 
 const StyledNavbar = () => {
   return (
@@ -80,17 +81,12 @@ const StyledNavbar = () => {
           </NavLink>
         </li>
       </ul>
-      <Link
-        to={
-          'https://web.facebook.com/profile.php?id=100054397844962&sk=mentions'
-        }
-        target="_blank"
-      >
-        <div className="logo">
-          <img src={myImage} alt="Asean-school-logo" className="my-image" />
-          <p className="vah-simonian">Vah Simonian</p>
-        </div>
-      </Link>
+      <div className="logo">
+        <Link to={'https://github.com/vahsimonian'} target="_blank">
+          <img src={githubIcon} alt="Asean-school-logo" className="my-image" />
+        </Link>
+        <p className="vah-simonian">Vah Simonian</p>
+      </div>
     </nav>
   );
 };
