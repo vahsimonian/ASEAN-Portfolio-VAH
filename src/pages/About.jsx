@@ -33,12 +33,13 @@ const About = () => {
         </div>
       </div>
       <div className="youtube">
-        <ReactPlayer
-          width={200}
-          height={300}
-          // className="video-youtube"
-          url={'https://www.youtube.com/shorts/ojVgMk-2-TE'}
-        />
+        <div className="video-youtube">
+          <ReactPlayer
+            width={'20vw'}
+            height={'40vh'}
+            url={'https://www.youtube.com/shorts/ojVgMk-2-TE'}
+          />
+        </div>
         <div className="home-icons">
           <img className="youtube-icon" src={youtubeIcon} alt="youtube" />
           <NavLink

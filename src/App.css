@@ -180,13 +180,6 @@ html {
   gap: 2rem;
 }
 
-.video-youtube {
-  width: 150px;
-  height: 200px;
-  margin-inline-start: -15px;
-  border-radius: 5px;
-}
-
 .img-greeting {
   display: flex;
   align-items: center;
@@ -251,5 +244,41 @@ html {
 @media screen and (max-width: 800px) {
   .layout {
     grid-template-columns: 35% 40%;
+  }
+  .home-page {
+    font-size: 1rem;
+  }
+  .about-page {
+    position: relative;
+    font-size: 1rem;
+    top: 0.5rem;
+  }
+  .img-greeting {
+    position: relative;
+    /* display: flex; */
+    /* gap: 0; */
+    left: -2rem;
+    font-size: 0.8rem;
+  }
+  .vah-logo {
+    width: 15vw;
+  }
+  .youtube {
+    position: relative;
+    left: -2rem;
+  }
+  .home-icons {
+    font-size: small;
+  }
+  .youtube-icon {
+    width: 50px;
+    height: 35px;
+  }
+  .github-icon {
+    width: 50px;
+  }
+  .download-btn {
+    padding: 2.5px 5px;
+    font-size: 0.65rem;
   }
 }
