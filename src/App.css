@@ -123,10 +123,15 @@ html {
 }
 
 .home-page {
-  position: relative;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   top: 1rem;
+}
+
+.home-span {
+  color: white;
 }
 
 .vah-simonian {
@@ -237,4 +242,14 @@ html {
 
 .im-vah span {
   color: white;
+}
+
+.projects-span {
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .layout {
+    grid-template-columns: 35% 40%;
+  }
 }

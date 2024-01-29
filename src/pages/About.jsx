@@ -49,7 +49,7 @@ const About = () => {
             to={'https://www.youtube.com/channel/UCz6sUwLNSkB7V-Cp-nCQFqQ'}
             target="_blank"
           >
-            <p>subscribe</p>
+            <p>Go to subscribe</p>
             <img className="github-icon" src={githubIcon} alt="youtube" />
             <p>github</p>
             <button className="download-btn" onClick={handleDownload}>
